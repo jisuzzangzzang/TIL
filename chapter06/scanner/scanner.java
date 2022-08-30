@@ -14,8 +14,8 @@ public class scanner {
 */
 
         // 콘솔 출력 (System.out과 System.err)
-            System.out.println("일반 출력");    // 콘솔에 값을 출력할 때, 디버깅 시 많이 사용됨
-            System.err.println("에러 출력");    // 오류 메세지를 출력할 경우 사용됨
+            System.out.println("일반 출력");    // 콘솔에 값을 출력할 때, 디버깅 시 많이 사용
+            System.err.println("에러 출력");    // 오류 메세지를 출력할 경우 사용
 
 
     }

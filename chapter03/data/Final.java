@@ -35,7 +35,7 @@ public class Final {
 
         // 정수와 실수 사이의 형변환
             int a1 = 123;
-            double d1 = a1; // 정수를 실수로 바꿀 때 캐스팅 필요 X
+            double d1 = a1; // 정수를 실수로 바꿀 때 캐스팅 필요X
                     System.out.println(d1); // 123.0
 
             double d2 = 123.456;

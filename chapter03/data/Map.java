@@ -49,7 +49,7 @@ public class Map {
                     System.out.println(map3.keySet());  // [flower, sea]
 
 
-        // TreeMap (입력된 Key의 오름차순 순서로 데이터를 저장)
+        // TreeMap (입력된 Key의 오름차순으로 데이터를 저장)
             TreeMap<String, String> fruits = new TreeMap<>();
             fruits.put("grape", "포도");
             fruits.put("apple", "사과");

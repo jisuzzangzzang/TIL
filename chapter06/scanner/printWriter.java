@@ -11,7 +11,7 @@ public class printWriter {
             for(int i=1; i<11; i++) {
                 String data = i + " 번 째 줄입니다.";
                 pw.println(data); // 콘솔 대신 파일에 출력하는 방법
-                                  // System.out 대신 PrintWriter 객체를 사용
+                                  // System.out 대신 PrintWriter 객체 사용
         }
 
             pw.close();

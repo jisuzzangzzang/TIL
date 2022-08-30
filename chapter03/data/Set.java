@@ -8,7 +8,7 @@ public class Set {
 
                 // HashSet (중복 허용X, 순서X, 중복을 제거하기 위한 필터 역할로 종종 사용)
                 HashSet<String> set = new HashSet<>(Arrays.asList("H", "e", "l", "l", "o"));
-                        System.out.println(set);    // [e, H, l, o] 출력
+                        System.out.println(set);    // [e, H, l, o]
 
 
                 // retainAll (교집합)
@@ -17,13 +17,13 @@ public class Set {
 
                 HashSet<Integer> intersection = new HashSet<>(s1);  // s1으로 intersection 생성
                 intersection.retainAll(s2); // 교집합 수행
-                        System.out.println(intersection); // [4, 5, 6] 출력
+                        System.out.println(intersection); // [4, 5, 6]
 
 
                 // addAll (합집합)
                 HashSet<Integer> union = new HashSet<>(s1); // s1으로 union 생성
                 union.addAll(s2); // 합집합 수행
-                        System.out.println(union);  // [1, 2, 3, 4, 5, 6, 7, 8, 9] 출력
+                        System.out.println(union);  // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
                 // removeAll (차집합)

@@ -1,3 +1,4 @@
+package chapter05.object;
 
 
 // extends (상속)

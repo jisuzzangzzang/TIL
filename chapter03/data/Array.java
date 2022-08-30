@@ -16,7 +16,7 @@ public class Array {
                 System.out.println();
 
 
-        // ArrayList (add)
+        // ArrayList , add
             ArrayList a = new ArrayList();
             a.add(0, "00");
             a.add(1, "11");

@@ -1,3 +1,4 @@
+package chapter05.object;
 
 
 // Q7. 광물이 추가되더라도 MineralCalculator 클래스를 변경할 필요가 없도록 코드 수정

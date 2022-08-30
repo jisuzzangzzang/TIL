@@ -22,7 +22,7 @@ public class Data_Type {
             double d2 = 1.234e2; // e2 = 10의 제곱
 
 
-        // boolean (True / false)
+        // boolean (True or false)
             int base = 180;
             int height = 185;
             boolean isTall = height < base;

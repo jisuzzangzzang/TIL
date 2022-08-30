@@ -13,7 +13,7 @@ public class inputStreamReader {
             reader.read(a);
 
                 System.out.println(a); // 콘솔에 "abc" -> "abc" 출력
-                                       // 많은 문자열을 입력해도 앞의 3자리 문자열만 출력된다. (고정되어있음)
+                                       // 많은 문자열을 입력해도 앞의 3자리 문자열만 출력됨 (고정되어있음)
 
 
     }

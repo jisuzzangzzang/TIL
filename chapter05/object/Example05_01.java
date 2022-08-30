@@ -1,3 +1,4 @@
+package chapter05.object;
 
 
 // Q6. 코드에서 오류가 발생하지 않도록 수정하기

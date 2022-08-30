@@ -8,14 +8,14 @@ import java.io.IOException;
 public class fileInputStream {
     public static void main(String[] args) throws IOException {
 
-        // 파일 읽기 (FileInputStream) - byte 단위
+        // 파일 읽기 (FileInputStream) - byte
             byte[] b = new byte[1024];
             FileInputStream input = new FileInputStream("c:/out.txt");
             input.read(b);
             System.out.println(new String(b)); // byte 배열을 문자열로 변경하여 출력
             input.close();
 
-        // 파일 읽기 (BufferReader) - Line 단위
+        // 파일 읽기 (BufferReader) - Line
             BufferedReader br = new BufferedReader(new FileReader("c/out.txt"));
             while(true) {
                 String line = br.readLine();

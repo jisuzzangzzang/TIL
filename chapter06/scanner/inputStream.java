@@ -33,7 +33,7 @@ public class inputStream {
 */
 
 
-            // 좀 더 개선된 방법 (배열 사용)
+            // 좀 더 개선된 방법 (배열)
                 InputStream in = System.in; // System.in -> InputStream의 객체
 
                 byte[] a = new byte[3];

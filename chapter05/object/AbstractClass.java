@@ -1,4 +1,4 @@
-
+package chapter05.object;
 
 // 추상 클래스 (Abstract Class)
 /*

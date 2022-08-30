@@ -15,7 +15,7 @@ public class bufferedReader {
             BufferedReader br = new BufferedReader(reader);
 
                 String a = br.readLine();
-                System.out.println(a); // 콘솔에 Hello World -> Hello World 그대로 출력 (Echo)
+                System.out.println(a); // 콘솔에 Hello World -> Hello World 그대로 출력
 
 
     }
