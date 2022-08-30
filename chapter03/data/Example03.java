@@ -17,7 +17,7 @@ public class Example03 {
                 System.out.println("홍길동씨의 평균 점수는 " + (a + b + c) / 3 + " 입니다."); // 70
 
 
-        // Q2. 자연수 13이 홀수인지? 짝수인지?
+        // Q2. 자연수 13은 홀수? 짝수?
             int d = 13;
             if (d % 2 == 0) {
                 System.out.println("자연수 13은 짝수입니다.");

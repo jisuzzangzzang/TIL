@@ -35,7 +35,7 @@ public class Map {
             HashMap<String, String> map2 = new HashMap<>();
             map2.put("people", "사람");
             map2.put("baseball", "야구");
-                    System.out.println(map2.keySet());   // [baseball, people] 출력
+                    System.out.println(map2.keySet());   // [baseball, people]
 
 
         // KeySet()의 List 자료형 변환
@@ -46,7 +46,7 @@ public class Map {
             LinkedHashMap<String, String> map3 = new LinkedHashMap<>();
             map3.put("flower", "꽃");
             map3.put("sea", "바다");
-                    System.out.println(map3.keySet());  // [flower, sea] 출력
+                    System.out.println(map3.keySet());  // [flower, sea]
 
 
         // TreeMap (입력된 Key의 오름차순 순서로 데이터를 저장)
@@ -54,7 +54,7 @@ public class Map {
             fruits.put("grape", "포도");
             fruits.put("apple", "사과");
             fruits.put("banana", "바나나");
-                    System.out.println(fruits.keySet()); // [apple, banana, grape] 출력
+                    System.out.println(fruits.keySet()); // [apple, banana, grape]
 
 
     }

@@ -29,7 +29,7 @@ public class Set {
                 // removeAll (차집합)
                 HashSet<Integer> substract = new HashSet<>(s1); // s1으로 substract 생성
                 substract.removeAll(s2); // 차집합 수행
-                        System.out.println(substract);  // [1, 2, 3] 출력
+                        System.out.println(substract);  // [1, 2, 3]
 
 
                 // add
@@ -37,7 +37,7 @@ public class Set {
                 set2.add("Jump");
                 set2.add("To");
                 set2.add("Java");
-                        System.out.println(set2);   // [Java, To, Jump] 출력
+                        System.out.println(set2);   // [Java, To, Jump]
 
 
                 // addAll (값 여러개 추가)
@@ -48,7 +48,7 @@ public class Set {
                 // TreeSet (오름차순으로 값을 정렬하여 저장)
                 TreeSet<Integer> ts = new TreeSet<>();
                 ts.addAll(Arrays.asList(8, 1, 2, 3, 4, 5, 6));
-                        System.out.println(ts); // [1, 2, 3, 4, 5, 6, 8] 출력
+                        System.out.println(ts); // [1, 2, 3, 4, 5, 6, 8]
 
 
                 // LinkedHashSet (입력한 순서대로 값을 정렬하여 저장)
