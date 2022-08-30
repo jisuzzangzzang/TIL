@@ -1,0 +1,96 @@
+Index: Chapter04_for.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class Chapter04_for {\r\n    public static void main(String[] args) {\r\n\r\n\r\n\r\n        // for문의 구조\r\n/*\r\n            for (초기치; 조건문; 증가치) {\r\n                ...\r\n            }\r\n*/\r\n\r\n\r\n        // 예제 (1)\r\n            String[] numbers = { \"one\", \"two\", \"three\" };\r\n                for (int i=0; i<numbers.length; i++) {\r\n                    System.out.println(numbers[i]);\r\n                }\r\n\r\n\r\n            int[] marks = { 90, 25, 67, 45, 80 };\r\n                for(int i=0; i<marks.length; i++) {\r\n                    if(marks[i] >= 60) {\r\n                        System.out.println((i+1) + \"번 학생은 합격입니다.\");\r\n                    } else {\r\n                        System.out.println((i+1) + \"번 학생은 불합격입니다.\");\r\n                    }\r\n                }\r\n\r\n\r\n        // for와 continue\r\n            int[] marks2 = { 90, 25, 67, 45, 80 };\r\n                for(int i=0; i< marks2.length; i++) {\r\n                    if(marks2[i] < 60) {    // 60점 미만인 학생인 경우 출력 부분 수행하지 않고 for문으로 돌아감\r\n                        continue;\r\n                    }\r\n                    System.out.println((i+1) + \"번 학생 축하합니다. 합격입니다.\");\r\n                }\r\n\r\n\r\n        // 이중 for문\r\n            for(int i=2; i<10; i++) {   // 2부터 9까지 반복 수행\r\n                for(int j=1; j<10; j++) {   // 1부터 9까지 반복 수행\r\n                    System.out.print(i*j+\" \");\r\n                }\r\n                System.out.println(\"\");\r\n            }\r\n\r\n\r\n\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Chapter04_for.java b/Chapter04_For.java
+rename from Chapter04_for.java
+rename to Chapter04_For.java
+--- a/Chapter04_for.java	(revision 5ace0c7eb51a1e4caece29f3d34426aaaaf47d11)
++++ b/Chapter04_For.java	(date 1661400897275)
+@@ -1,4 +1,4 @@
+-public class Chapter04_for {
++public class Chapter04_For {
+     public static void main(String[] args) {
+ 
+ 
+Index: Chapter04_while.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class Chapter04_while {\r\n    public static void main(String[] args) {\r\n\r\n\r\n\r\n        // while (조건문이 참인 동안 while문의 반복 수행)\r\n/*\r\n            while (조건문) {\r\n            <수행할 문장1>;\r\n            <수행할 문장2>;\r\n            <수행할 문장3>;\r\n            ...\r\n            }\r\n*/\r\n\r\n\r\n        // Q. 열 번 찍어 안 넘어 가는 나무 없다\r\n            int treeHit = 0;\r\n            while (treeHit < 10) {\r\n                treeHit++;\r\n                System.out.println(\"나무를 \" + treeHit + \"번 찍었습니다.\");\r\n                if (treeHit == 10) {\r\n                    System.out.println(\"나무가 넘어갑니다.\");\r\n                }\r\n            }\r\n\r\n\r\n        // 무한 루프 (Loop)\r\n/*\r\n            while (true) {\r\n                System.out.println(\"Ctrl-C를 눌러야 while문을 빠져 나갈 수 있습니다.\");\r\n            }\r\n*/\r\n\r\n\r\n        // while문 빠져나가기 (break)\r\n            int coffee = 10;\r\n            int money = 300;\r\n\r\n            while (money > 0) {\r\n                System.out.println(\"돈을 지불했으니 커피를 줍니다.\");\r\n                coffee--;\r\n                System.out.println(\"남은 커피의 양은 \" + coffee + \"입니다.\");\r\n\r\n                    if (coffee == 0) { // coffee가 0이 되면 if문 실행 -> break 호출 -> while문 빠져나감\r\n                        System.out.println(\"커피가 다 떨어졌습니다. 판매를 중지합니다\");\r\n                        break;\r\n                    }\r\n            }\r\n\r\n\r\n        // while문 조건문으로 돌아가기 (continue)\r\n            int a = 0;\r\n\r\n            while (a < 10) {\r\n                a++;\r\n                if (a % 2 == 0) {   // 짝수인 경우 continue 수행 -> while문으로 돌아감\r\n                    continue;\r\n                }\r\n                System.out.println(a);\r\n            }\r\n\r\n\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Chapter04_while.java b/Chapter04_While.java
+rename from Chapter04_while.java
+rename to Chapter04_While.java
+--- a/Chapter04_while.java	(revision 5ace0c7eb51a1e4caece29f3d34426aaaaf47d11)
++++ b/Chapter04_While.java	(date 1661400897264)
+@@ -1,4 +1,4 @@
+-public class Chapter04_while {
++public class Chapter04_While {
+     public static void main(String[] args) {
+ 
+ 
+Index: Chapter04_switch_Case.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class Chapter04_switch_Case {\r\n    public static void main(String[] args) {\r\n\r\n\r\n\r\n        // switch/case문의 구조\r\n/*\r\n            switch(입력변수) {\r\n                case 입력값1: ...\r\n                    break;\r\n                case 입력값2: ...\r\n                    break;\r\n                ...\r\n                default: ...\r\n                    break;\r\n            }\r\n*/\r\n\r\n\r\n        // 예제 (1)\r\n            int month = 15;\r\n            String monthString = \"\";\r\n                switch (month) {\r\n                    case 1:  monthString = \"January\";\r\n                        break;\r\n                    case 2:  monthString = \"February\";\r\n                        break;\r\n                    case 3:  monthString = \"March\";\r\n                        break;\r\n                    case 4:  monthString = \"April\";\r\n                        break;\r\n                    case 5:  monthString = \"May\";\r\n                        break;\r\n                    case 6:  monthString = \"June\";\r\n                        break;\r\n                    case 7:  monthString = \"July\";\r\n                        break;\r\n                    case 8:  monthString = \"August\";\r\n                        break;\r\n                    case 9:  monthString = \"September\";\r\n                        break;\r\n                    case 10: monthString = \"October\";\r\n                        break;\r\n                    case 11: monthString = \"November\";\r\n                        break;\r\n                    case 12: monthString = \"December\";\r\n                        break;\r\n                    default: monthString = \"Invalid month\"; // 숫자가 아닌 다른 값이 저장되면 default 문장 출력\r\n                        break;\r\n                }\r\n\r\n            System.out.println(monthString);\r\n\r\n\r\n        // switch/case문은 if else문으로 변경 가능, if else문은 switch/case문으로 변경 불가능\r\n        // 입력 값이 정형화 되있는 경우 switch/case문 가독성 좋음\r\n\r\n\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Chapter04_switch_Case.java b/Chapter04_Switch_Case.java
+rename from Chapter04_switch_Case.java
+rename to Chapter04_Switch_Case.java
+--- a/Chapter04_switch_Case.java	(revision 5ace0c7eb51a1e4caece29f3d34426aaaaf47d11)
++++ b/Chapter04_Switch_Case.java	(date 1661400897252)
+@@ -1,4 +1,4 @@
+-public class Chapter04_switch_Case {
++public class Chapter04_Switch_Case {
+     public static void main(String[] args) {
+ 
+ 
+Index: Chapter04_if.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.ArrayList;\r\n\r\npublic class Chapter04_if {\r\n    public static void main(String[] args) {\r\n\r\n\r\n\r\n        // if (조건문) 참이면 조건문 수행, 거짓이면 else 문에 속한 문장 수행\r\n/*\r\n            if (조건문) {\r\n                <수행할 문장1>;\r\n                <수행할 문장2>;\r\n            } else {\r\n                <수행할 문장A>;\r\n                <수행할 문장B>;\r\n            }\r\n*/\r\n\r\n\r\n        // 연산자\r\n            int x = 3; int y = 2;\r\n            System.out.println(x > y); // true\r\n            System.out.println(y < x); // false\r\n            System.out.println(x == y); // false\r\n            System.out.println(x != y); // true\r\n\r\n\r\n        // Q1. 3000원의 이상의 돈을 가지고 있으면 택시, 아니면 걸어가라\r\n            int money = 2000;\r\n\r\n            if (money >= 3000) {\r\n                System.out.println(\"택시타기\");\r\n            } else {\r\n                System.out.println(\"걸어가기\");    // 조건문이 거짓이므로 else문 수행\r\n            }\r\n\r\n\r\n        // x || y (or), x와 y 둘 중 하나가 true면 true\r\n        // x && y (and), x와 y 모두가 true면 true\r\n        // !x (not), x가 거짓이면 true\r\n\r\n\r\n        // contains (해당 아이템 조사)\r\n            boolean card = true;\r\n            ArrayList<String> pocket = new ArrayList<>();\r\n            pocket.add(\"paper\");\r\n            pocket.add(\"handphone\");\r\n\r\n            if (pocket.contains(\"handphone\")) { // pocket 안에 handphone이 있으므로 조건문 수행\r\n                System.out.println(\"택시타기\");\r\n            } else {\r\n                System.out.println(\"걸어가기\");\r\n            }\r\n\r\n\r\n        // else if (다중 조건 판단)\r\n/*\r\n            if (조건문) {\r\n                <수행할 문장1>\r\n                <수행할 문장2>\r\n                ...\r\n            } else if (조건문) {\r\n                <수행할 문장1>\r\n                <수행할 문장2>\r\n                ...\r\n            } else if (조건문) {\r\n                <수행할 문장1>\r\n                <수행할 문장2>\r\n                ...\r\n                ...\r\n            } else {\r\n               <수행할 문장1>\r\n               <수행할 문장2>\r\n               ...\r\n           }\r\n*/\r\n\r\n\r\n            if (pocket.contains(\"money\")) { // 조건문이 거짓이므로 2번째 else if문으로 넘어감\r\n                System.out.println(\"택시타기\");\r\n            } else if (card) {              // card = true 이므로 2번째 else if문 수행\r\n                System.out.println(\"버스타기\");\r\n            } else {\r\n                System.out.println(\"걸어가기\");\r\n            }\r\n\r\n\r\n\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Chapter04_if.java b/Chapter04_If.java
+rename from Chapter04_if.java
+rename to Chapter04_If.java
+--- a/Chapter04_if.java	(revision 5ace0c7eb51a1e4caece29f3d34426aaaaf47d11)
++++ b/Chapter04_If.java	(date 1661400897299)
+@@ -1,6 +1,6 @@
+ import java.util.ArrayList;
+ 
+-public class Chapter04_if {
++public class Chapter04_If {
+     public static void main(String[] args) {
+ 
+ 
+Index: Chapter04_forEach.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.sql.Array;\r\nimport java.util.ArrayList;\r\nimport java.util.Arrays;\r\n\r\npublic class Chapter04_forEach {\r\n    public static void main(String[] args) {\r\n\r\n\r\n\r\n        // for each문의 구조 (루프를 돌릴 수 있는 자료형 즉, 배열 및 ArrayList만 가능)\r\n/*\r\n        for (type var: iterate) {\r\n            body-of-loop\r\n        }\r\n*/\r\n\r\n\r\n        // for each\r\n        String[] numbers = { \"one\", \"two\", \"three\" };\r\n        for(String number:numbers) {\r\n            System.out.println(number);\r\n        }\r\n\r\n\r\n        // 예제 (1)\r\n        ArrayList<String> num = new ArrayList<>(Arrays.asList(\"one\", \"two\", \"three\"));\r\n        for(String number:num) {\r\n            System.out.println(num);\r\n        }\r\n\r\n\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Chapter04_forEach.java b/Chapter04_ForEach.java
+rename from Chapter04_forEach.java
+rename to Chapter04_ForEach.java
+--- a/Chapter04_forEach.java	(revision 5ace0c7eb51a1e4caece29f3d34426aaaaf47d11)
++++ b/Chapter04_ForEach.java	(date 1661400897289)
+@@ -1,8 +1,7 @@
+-import java.sql.Array;
+ import java.util.ArrayList;
+ import java.util.Arrays;
+ 
+-public class Chapter04_forEach {
++public class Chapter04_ForEach {
+     public static void main(String[] args) {
+ 
+ 
