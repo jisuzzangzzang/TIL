@@ -1,5 +1,3 @@
-package chapter05.object;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 

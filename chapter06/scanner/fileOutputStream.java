@@ -1,4 +1,4 @@
-package chapter06.scanner.src;
+package chapter06.scanner;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

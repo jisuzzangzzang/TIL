@@ -1,5 +1,3 @@
-package chapter05.object;
-
 class Animal3 {
     String name;
     void setName(String name) {

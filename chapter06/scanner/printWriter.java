@@ -13,6 +13,7 @@ public class printWriter {
                 pw.println(data); // 콘솔 대신 파일에 출력하는 방법
                                   // System.out 대신 PrintWriter 객체를 사용
         }
+
             pw.close();
 
     }

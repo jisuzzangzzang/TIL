@@ -1,4 +1,4 @@
-package chapter05.object;
+
 
 // 객체지향 프로그래밍이 필요한 이유
 

@@ -1,4 +1,4 @@
-package chapter05.object;
+
 
 // Class (객체를 생성하게 해줌)
 

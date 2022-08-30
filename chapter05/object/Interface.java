@@ -1,4 +1,4 @@
-package chapter05.object;
+
 
 // 인터페이스 (Interface)
 /*

@@ -1,4 +1,4 @@
-package chapter05.object;
+
 
 // extends (상속)
     class Animal2 {

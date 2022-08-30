@@ -1,4 +1,4 @@
-package chapter06.scanner.src;
+package chapter06.scanner;
 
 public class scanner {
     public static void main(String[] args) {

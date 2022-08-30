@@ -1,5 +1,3 @@
-package chapter04.controlstatement;
-
 public class Switch_Case {
     public static void main(String[] args) {
 
